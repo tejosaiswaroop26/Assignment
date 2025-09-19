@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="brush" class="com.store.products.Products">
+        <property name="id" value="1"/>
+        <property name="name" value="Brush"/>
+        <property name="price" value="30"/>
+    </bean>
+
+    <bean name="toothpaste" class="com.store.products.Products">
+        <property name="id" value="2"/>
+        <property name="name" value="ToothPaste"/>
+        <property name="price" value="50"/>
+    </bean>
+
+    <bean name="soap" class="com.store.products.Products">
+        <property name="id" value="3"/>
+        <property name="name" value="Soap"/>
+        <property name="price" value="25"/>
+    </bean>
+
+    <bean name="pricesort" class="com.store.products.ProductService">
+        <
+    </bean>
+</beans>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="details0" class="com.school.marks.Student">
+        <property name="id" value="1"/>
+        <property name="name" value="subash"/>
+        <property name="marks" value="69"/>
+    </bean>
+
+    <bean name="details1" class="com.school.marks.Student">
+        <property name="id" value="2"/>
+        <property name="name" value="subashgf"/>
+        <property name="marks" value="99"/>
+    </bean>
+
+    <bean name="details2" class="com.school.marks.Student">
+        <property name="id" value="3"/>
+        <property name="name" value="subashbf"/>
+        <property name="marks" value="96"/>
+    </bean>
+
+    <bean name="markings" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="details0"/>
+                <ref bean="details1"/>
+                <ref bean="details2"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
